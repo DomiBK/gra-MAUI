@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <VerticalStackLayout Spacing="25" Padding="30"
+        VerticalOptions="Center" HorizontalOptions="Center">
+        
+            <Grid x:Name="buttonsGrid"
+              RowSpacing="10"
+              ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Button Text="Reset" Clicked="ResetButton_Clicked" BackgroundColor="DarkGray" TextColor="Blue"/>
+    </VerticalStackLayout>
+</ContentPage>
